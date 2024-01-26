@@ -1,6 +1,12 @@
 const express = require("express");
 const app = express();
-const PORT = 8000;
+const PORT = 3000;
+
+app.get("/", (req, res) => {
+    res.send("<h1> 📌Hall Booking API Was created 📢</h1>");
+});
+
+
 
 let rooms = [];
 let bookings = [];
